@@ -1,0 +1,302 @@
+/* Palette de couleurs */
+:root {
+    --color-dark: #1C1C1C;
+    /* Noir Profond */
+    --color-primary: #2ECC71;
+    /* Vert Émeraude */
+    --color-secondary: #95A5A6;
+    /* Gris Anthracite */
+    --color-light: #FFFFFF;
+    /* Blanc Pur */
+    --color-accent: #A8E6CF;
+    /* Vert Menthe */
+}
+
+
+html{
+    width: 100%;
+}
+
+
+/* contenu de gauche */
+
+body {
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+main {
+    display: flex;
+
+    font-size: 2rem;
+    width: 90%;
+    height: 80dvh;
+    border-radius: 15px;
+}
+.mainContent{
+    display: flex;
+    width: 100%;
+}
+
+
+#contentLeft {
+    display: flex;
+
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 40%;
+    padding: 20px;
+
+
+}
+
+
+/* photo de profil */
+
+#photo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+#photoImg {
+
+    margin-top: 15px;
+    width: 70%;
+   
+   
+}
+
+/* contact div */
+#contact {
+    width: 90%;
+
+    border-radius: 15px;
+    padding: 15px;
+    text-align: center;
+    overflow-wrap: break-word;
+
+}
+
+#contact img {
+    width: 20px;
+    position: relative;
+    top: +2px;
+
+}
+
+
+#skills {
+    text-align: center;
+    /* border: dotted 1px; */
+
+}
+
+meter::-webkit-meter-bar {
+
+    border-radius: 2px;
+
+
+}
+
+meter::-webkit-meter-optimum-value {
+    background-color: var(--color-accent);
+    border-radius: 0px;
+
+}
+
+#skillsMeters {
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+
+#contentRight {
+   
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.textBoxes {
+    display: flex;
+    flex-direction: column; 
+    
+    width: 90%;
+    padding: 20px;
+}
+
+
+/* carte ecoles */
+.container {
+    
+    display: flex;
+   
+     
+    gap: 30px;
+    justify-content: center;
+}
+
+.card-container {
+    /* perspective: 1000px; */
+    min-width: 400px;
+    height: 280px;
+    margin-bottom: 20px;
+}
+
+.carte {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.8s;
+}
+
+.card-container:hover .carte {
+    transform: rotateY(180deg);
+}
+
+.face,
+.dos {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* .face {
+   
+} */
+
+.dos {
+
+    transform: rotateY(180deg);
+    overflow: hidden;
+}
+
+.dos img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.school .company {
+    font-weight: bold;
+    font-size: 1.2rem;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.degre .poste {
+    font-style: italic;
+    /* color: #495057; */
+    display: block;
+    margin-top: 5px;
+}
+
+.location {
+    /* color: #6c757d; */
+}
+
+#dateEducation .dateExperience {
+    /* color: #6c757d; */
+    float: right;
+}
+
+.textEducation .textExperience {
+    margin-top: 10px;
+    font-size: 0.9rem;
+}
+
+
+/* Partie de droite */
+#mainRight {
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+
+/* Zones des liens des réseaux sociaux */
+.SocialContainers a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: var(--text-color);
+    width: max-content;
+    border: 2px dotted var(--couleur-principale);
+    border-radius: 0px;
+    transition: 0.2s ease-in-out;
+    font-size:1.5rem;   
+}
+
+
+
+/* icones */
+.icones {
+    width: 5rem;
+}
+
+
+#certification {
+
+    width: 100%;
+    border: solid 2px  var(--color-secondary);
+    border-radius: 15px;
+}
+
+
+/* coter droite */
+
+#mainRight{
+    width: 30% ;
+ 
+}
+
+.knowedges{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+
+
+
+/* ################################################################################### */
+@media (max-width: 1500px) {
+
+    main{
+        display: flex;
+        flex-direction: column;
+    }
+
+
+}
+ 
+
+
+/* ################################################################################## */
+@media (max-width: 600px) {
+    body {
+        background-color: rgb(230, 173, 221);
+        /* Exemple de modification */
+    }
+}
