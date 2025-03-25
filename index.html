@@ -32,41 +32,34 @@
 
                 <section id="skills">
                     <h4>Skills</h4>
+                    
+                                        
                     <div id="skillsMeters">
-
                         <div class="metersContainer">
-
-                            <div class="meters">
-                                <span class="meter-text">Python</span> <br>
-                                <meter value="6" min="0" max="10"></meter>
-                            </div>
                             <div class="meters">
                                 <span class="meter-text">HTML</span> <br>
-                                <meter value="6" min="0" max="10"></meter>
+                                <span class="emoji-meter" data-value="5"></span>
                             </div>
                             <div class="meters">
                                 <span class="meter-text">CSS</span> <br>
-                                <meter value="6" min="0" max="10"></meter>
+                                <span class="emoji-meter" data-value="6"></span>
                             </div>
                         </div>
                         <div class="metersContainer">
-
                             <div class="meters">
                                 <span class="meter-text">PHP</span> <br>
-                                <meter value="6" min="0" max="10"></meter>
+                                <span class="emoji-meter" data-value="10"></span>
                             </div>
                             <div class="meters">
                                 <span class="meter-text">JavaScript</span> <br>
-                                <meter value="6" min="0" max="10"></meter>
+                                <span class="emoji-meter" data-value="6"></span>
                             </div>
                             <div class="meters">
                                 <span class="meter-text">SQL</span> <br>
-                                <meter value="6" min="0" max="10"></meter>
+                                <span class="emoji-meter" data-value="6"></span>
                             </div>
                         </div>
                     </div>
-
-
                 </section>
 
 
@@ -155,12 +148,12 @@
                                         <span class="company">Maison des Enfants Pirouette</span>
                                         <span id="dateExperience">2022-2023</span> <br>
                                         <span class="location">Bruxelles - Marolles</span>
-                                        <span class="poste">Stagiaire animateur/accompagnateur</span>
+                                        <span class="poste">Stagiaire animateur</span>
 
                                     </div>
                                 </div>
                                 <div class="dos">
-                                    <img src="/img/pirouette.png" alt="Logo Maison des Enfants Pirouette">
+                                    <img src="/img/pirouette.jpg" alt="Logo Maison des Enfants Pirouette">
                                 </div>
                             </div>
                         </div>
@@ -181,21 +174,23 @@
 
             <section class="knowedges">
                 <h4>Langues</h4>
-                <div class="metersContainer">
-
-                    <div class="meters">
-                        <span class="meter-text">Espagnol</span> <br>
-                        <meter value="6" min="0" max="10"></meter>
-                    </div>
-                    <div class="meters">
-                        <span class="meter-text">Français</span> <br>
-                        <meter value="6" min="0" max="10"></meter>
-                    </div>
-                    <div class="meters">
-                        <span class="meter-text">Anglais</span> <br>
-                        <meter value="6" min="0" max="10"></meter>
-                    </div>
-                </div>
+                
+<div id="skillsMeters">
+    <div class="metersContainer">
+        <div class="meters">
+            <span class="meter-text">Espagnol</span> <br>
+            <span class="emoji-meter" data-value="6" data-emoji="🇪🇸"></span>
+        </div>
+        <div class="meters">
+            <span class="meter-text">Français</span> <br>
+            <span class="emoji-meter" data-value="6" data-emoji="🇫🇷"></span>
+        </div>
+        <div class="meters">
+            <span class="meter-text">Anglais</span> <br>
+            <span class="emoji-meter" data-value="6" data-emoji="🇬🇧"></span>
+        </div>
+    </div>
+</div>
 
                 </div>
             </section>
@@ -205,21 +200,21 @@
                 <div id="links">
                     <div class="SocialContainers">
 
-                        <a href="https://github.com/Bryamx26">
-                            <img src="/icons/github.svg" class="icones" alt="icone Github">
+                        <a href="https://github.com/Bryamx26" target="_blank">
+                            <img src="/icons/github.svg" class="icones" alt="icone Github" >
                             Bryamx26
                         </a>
                     </div>
                     <div class="SocialContainers">
-                        <a href="https://instagram.com/bryamx19">
+                        <a href="https://instagram.com/bryamx19" target="_blank">
                             <img src="/icons/instagram.svg" class="icones" alt="icone Instagram">
                             Bryamx19
                         </a>
                     </div>
                     <div class="SocialContainers">
 
-                        <a href="https://www.linkedin.com/in/bryam-rishing-silva-5a291b352/">
-                            <img src="/icons/linkedin.svg" class="icones" alt="icone linkedin">
+                        <a href="https://www.linkedin.com/in/bryam-rishing-silva-5a291b352/" target="_blank">
+                            <img src="/icons/linkedin.svg" class="icones"  alt="icone linkedin">
                             Bryam Carlo Rishing Silva
                         </a>
                     </div>
@@ -233,4 +228,12 @@
 
 </body>
 
+<script>
+    document.querySelectorAll('.emoji-meter').forEach(meter => {
+        let value = parseInt(meter.getAttribute('data-value'));
+        meter.innerHTML = "🟢".repeat(value);
+    });
+
+   
+</script>
 </html>
