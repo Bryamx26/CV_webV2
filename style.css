@@ -12,29 +12,29 @@ body {
 
 main {
     display: flex;
-    max-width:100%px;
+    width: 100%;
     margin: 20px auto;
     background-color: white;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.mainContent {
+.main-content {
     display: flex;
-    width: 70%;
+    width: 100%;
 }
 
-#contentLeft {
+#content-left {
     width: 40%;
     background-color: #f0f0f0;
     padding: 20px;
 }
 
-#contentRight {
+#content-right {
     width: 60%;
     padding: 20px;
 }
 
-#mainRight {
+#main-right {
     width: 30%;
     background-color: #f0f0f0;
     padding: 20px;
@@ -46,7 +46,7 @@ main {
     margin-bottom: 20px;
 }
 
-#photoImg {
+#photo-img {
     width: 200px;
     height: 200px;
     border-radius: 50%;
@@ -54,8 +54,8 @@ main {
     margin-bottom: 15px;
 }
 
-#contact {
-    text-align: left;
+#contact p {
+    margin-bottom: 5px;
 }
 
 #contact img {
@@ -65,25 +65,32 @@ main {
 }
 
 /* Skills Section */
-#skills h4, .knowedges h4 {
+#skills h2, .knowedges h2 {
     border-bottom: 2px solid #333;
     padding-bottom: 5px;
     margin-bottom: 10px;
 }
 
-#skillsMeters {
+#skills-meters {
     display: flex;
     flex-direction: column;
 }
 
-.metersContainer {
+.meters-container {
     display: flex;
     justify-content: space-evenly;
     margin-bottom: 10px;
+    flex-wrap: wrap;
 }
 
 .meters {
+    flex: 1;
     text-align: center;
+    border: solid 2px #cfcfcfa6;
+    border-radius: 15px;
+    padding: 10px;
+    margin: 5px;
+    transition: transform 0.1s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
 .emoji-meter {
@@ -91,11 +98,11 @@ main {
 }
 
 /* Text Boxes */
-.textBoxes {
+.text-boxes {
     margin-bottom: 20px;
 }
 
-.textBoxes h3 {
+.text-boxes h2 {
     border-bottom: 2px solid #333;
     padding-bottom: 5px;
     margin-bottom: 10px;
@@ -154,7 +161,7 @@ main {
 }
 
 /* Profiles Section */
-#profiles .SocialContainers {
+#profiles .social-containers {
     margin-bottom: 10px;
 }
 
@@ -176,14 +183,48 @@ main {
     height: auto;
 }
 
+@media print {
+    body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        background-color: white;
+    }
+
+    main {
+        display: flex;
+        max-width: 100%;
+      
+        background-color: white;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+       
+    }
+
+    .main-content {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+    }
+
+    #certification {
+        max-width: 300px;
+        height: 200px;
+    }
+
+    #photo{
+        display: flex;
+        justify-content: space-evenly;
+
+    }
+}
+
 /* Responsive Adjustments */
 @media (max-width: 768px) {
-    main, .mainContent {
+    main, .main-content {
         flex-direction: column;
         width: 100%;
     }
 
-    #contentLeft, #contentRight, #mainRight {
+    #content-left, #content-right, #main-right {
         width: 100%;
     }
 }
@@ -194,7 +235,7 @@ main {
         font-size: 18px;
     }
 
-    #photoImg {
+    #photo-img {
         width: 250px;
         height: 250px;
     }
@@ -207,11 +248,11 @@ main {
         font-size: 2em;
     }
 
-    .textBoxes h3 {
+    .text-boxes h2 {
         font-size: 1.5em;
     }
 
-    #skills h4, .knowedges h4 {
+    #skills h2, .knowedges h2 {
         font-size: 1.3em;
     }
 
@@ -223,7 +264,7 @@ main {
         font-size: 1.1em;
     }
 
-    .TextContent {
+    .text-content {
         font-size: 1em;
     }
 }
@@ -232,9 +273,16 @@ main {
 @media screen and (min-width: 1800px) {
     body {
         font-size: 20px;
+        display: flex;
+    }
+    main{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+       
     }
 
-    #photoImg {
+    #photo-img {
         width: 300px;
         height: 300px;
     }
@@ -247,11 +295,11 @@ main {
         font-size: 2.2em;
     }
 
-    .textBoxes h3 {
+    .text-boxes h2 {
         font-size: 1.7em;
     }
 
-    #skills h4, .knowedges h4 {
+    #skills h2, .knowedges h2 {
         font-size: 1.5em;
     }
 
@@ -263,7 +311,7 @@ main {
         font-size: 1.2em;
     }
 
-    .TextContent {
+    .text-content {
         font-size: 1.1em;
     }
 }
