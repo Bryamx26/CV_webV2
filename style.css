@@ -1,3 +1,9 @@
+
+.root{
+    --primarycolor:#4fd43b;
+}
+
+
 * {
     margin: 0;
     padding: 0;
@@ -5,16 +11,16 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: system-ui;
     line-height: 1.6;
-    background-color: #f4f4f4;
+    
 }
 
 main {
     display: flex;
     width: 100%;
     margin: 20px auto;
-    background-color: white;
+    background-color: var(--primarycolor);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
@@ -90,11 +96,18 @@ main {
     border-radius: 15px;
     padding: 10px;
     margin: 5px;
-    transition: transform 0.1s ease-in-out, box-shadow 0.3s ease-in-out;
+
 }
 
 .emoji-meter {
-    font-size: 10px;
+    font-size: 1rem;
+    border: solid   ;
+    border-radius: 5px;
+}
+.etoiles{
+    width: 1rem;
+    padding: 2px;
+    
 }
 
 /* Text Boxes */
@@ -232,7 +245,7 @@ main {
 /* Large Screen Responsive Typography */
 @media screen and (min-width: 1500px) {
     body {
-        font-size: 18px;
+        font-size: 1rem;
     }
 
     #photo-img {
@@ -257,7 +270,7 @@ main {
     }
 
     .emoji-meter {
-        font-size: 16px;
+        font-size: 1rem;
     }
 
     .meter-text {
@@ -272,7 +285,7 @@ main {
 /* Extra Large Screen Responsive Typography */
 @media screen and (min-width: 1800px) {
     body {
-        font-size: 20px;
+        font-size: 1.5rem;
         display: flex;
     }
     main{
@@ -304,7 +317,7 @@ main {
     }
 
     .emoji-meter {
-        font-size: 18px;
+        font-size: 1rem;
     }
 
     .meter-text {
