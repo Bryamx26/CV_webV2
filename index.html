@@ -36,7 +36,7 @@
 
                 <section id="skills">
                     <h3>Skills</h3>
-                    <div id="skills-meters">
+                    <div class="skills-meters">
                         <div class="meters-container">
                             <div class="meters">
                                 <span class="meter-text">HTML</span><br>
@@ -69,11 +69,11 @@
             <div id="content-right">
                 <section class="text-boxes">
                     <h3>Description</h3>
-                    <p>Actuellement en formation au département des Sciences et Technologies de l'HEH, je suis une personne dynamique et passionnée par l'informatique. J'aime relever de nouveaux défis et développer continuellement mes compétences. Attaché à l'esprit d'équipe, je veille au bien-être de mes collègues, convaincu qu'une équipe soudée est plus performante.</p>
+                    <p id="description">Actuellement en formation au département des Sciences et Technologies de l'HEH, je suis une personne dynamique et passionnée par l'informatique. J'aime relever de nouveaux défis et développer continuellement mes compétences. Attaché à l'esprit d'équipe, je veille au bien-être de mes collègues, convaincu qu'une équipe soudée est plus performante.</p>
                 </section>
 
                 <section class="text-boxes">
-                    <h3>Education</h3>
+                    <h3>Éducation</h3>
                     <div class="container">
                         <!-- Première carte -->
                         <div class="card-container">
@@ -163,7 +163,7 @@
 
                 <section class="knowedges">
                     <h3>Langues</h3>
-                    <div id="skills-meters">
+                    <div class="skills-meters">
                         <div class="meters-container">
                             <div class="meters">
                                 <span class="meter-text">Espagnol</span><br>
@@ -213,6 +213,7 @@
             let value = parseInt(meter.getAttribute('data-value'));
             let reste = 5-value;
             meter.innerHTML = "<img class='etoiles' src = '/icons/etoile.svg'>".repeat(value);
+            
             meter.innerHTML += "<img class ='etoiles' src = '/icons/etoile-n.svg'>".repeat(reste);
         });
     </script>
@@ -223,7 +224,8 @@
                 function () {
                     $(this).css({
                         "transform": "scale(1.05)", 
-                        "border": "dotted 2px",
+                        "border": " dotted 5px",
+                        
                         "background": "#cfcfcfa6"
                     });
                 },

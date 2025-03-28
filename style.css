@@ -1,6 +1,9 @@
 
-.root{
-    --primarycolor:#4fd43b;
+:root{
+    --primarycolor :#E0E2E8;
+    --secondarycolor:#B0C0D4;
+    --textcolor : #5DA5B3;
+    --titlecolors : #394054;
 }
 
 
@@ -13,6 +16,8 @@
 body {
     font-family: system-ui;
     line-height: 1.6;
+    background-color: var(--primarycolor);
+    
     
 }
 
@@ -20,7 +25,7 @@ main {
     display: flex;
     width: 100%;
     margin: 20px auto;
-    background-color: var(--primarycolor);
+    
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
@@ -31,18 +36,19 @@ main {
 
 #content-left {
     width: 40%;
-    background-color: #f0f0f0;
+    background-color: var(--primarycolor);
     padding: 20px;
 }
 
 #content-right {
     width: 60%;
     padding: 20px;
+
 }
 
 #main-right {
     width: 30%;
-    background-color: #f0f0f0;
+   
     padding: 20px;
 }
 
@@ -77,8 +83,9 @@ main {
     margin-bottom: 10px;
 }
 
-#skills-meters {
+.skills-meters {
     display: flex;
+    flex: 1;
     flex-direction: column;
 }
 
@@ -101,11 +108,11 @@ main {
 
 .emoji-meter {
     font-size: 1rem;
-    border: solid   ;
+   
     border-radius: 5px;
 }
 .etoiles{
-    width: 1rem;
+    width: 1.4rem;
     padding: 2px;
     
 }
@@ -125,11 +132,13 @@ main {
 .container {
     display: flex;
     gap: 15px;
+    
 }
 
 .card-container {
     flex: 1;
     perspective: 1000px;
+   
 }
 
 .carte {
@@ -151,18 +160,19 @@ main {
     backface-visibility: hidden;
     display: flex;
     align-items: center;
-    border-radius: 8px;
+    border-radius: 25px;
+    border: solid 4px;
     overflow: hidden;
 }
 
 .face {
     padding: 15px;
-    background-color: #f9f9f9;
+    background-color: var(--secondarycolor);
     z-index: 2;
 }
 
 .dos {
-    background-color: #e0e0e0;
+
     transform: rotateY(180deg);
     justify-content: center;
 }
@@ -194,6 +204,13 @@ main {
 #certification {
     max-width: 100%;
     height: auto;
+}
+
+#description{
+    background-color: var(--secondarycolor);
+    padding: 5px;
+    border: solid;
+    border-radius: 15px;
 }
 
 @media print {
@@ -239,6 +256,7 @@ main {
 
     #content-left, #content-right, #main-right {
         width: 100%;
+       
     }
 }
 
