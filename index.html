@@ -4,239 +4,217 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <meta name="description" content="Page de présentation.">
-    <meta name="author" content="Rishing Silva Bryam Carlo étudiant en informatique ">
+    <meta name="description" content="CV de Bryam Rishing Silva - Étudiant en informatique">
+    <meta name="author" content="Bryam Carlo Rishing Silva">
     <link rel="stylesheet" href="style.css">
-    <title>CV Bryam</title>
+    <title>CV Bryam Rishing Silva</title>
 </head>
 <body>
     <main>
-        <div class="main-content">
-            <!-- Premiere div de contenu -->
-            <div id="content-left">
-                <section id="photo">
-                    <img src="img/photo.jpg" id="photo-img" alt="photo de profil">
-                    <div id="contact">
-                        <h1>Bryam Carlo Rishing Silva</h1>
-                        <p>Etudiant en informatique</p>
-                        <p>
-                            <img src="icons/location.svg" alt="localisation">
-                            <span id="location">Cité jardin 4/103 7100 la Louvière</span>
-                        </p>
-                        <p>
-                            <img src="icons/vibration.svg" alt="phone">
-                            <span id="phone">+32472544754</span>
-                        </p>
-                        <p>
-                            <img src="icons/mail.svg" alt="mail">
-                            <span id="mail">rishingsilvabryam@gmail.com</span>
-                        </p>
-                    </div>
-                </section>
-
-                <section id="skills">
-                    <h3>Skills</h3>
-                    <div class="skills-meters">
-                        <div class="meters-container">
-                            <div class="meters">
-                                <span class="meter-text">HTML</span><br>
-                                <span class="emoji-meter" data-value="5"></span>
-                            </div>
-                            <div class="meters">
-                                <span class="meter-text">CSS</span><br>
-                                <span class="emoji-meter" data-value="4"></span>
-                            </div>
-                        </div>
-                        <div class="meters-container">
-                            <div class="meters">
-                                <span class="meter-text">PHP</span><br>
-                                <span class="emoji-meter" data-value="4"></span>
-                            </div>
-                            <div class="meters">
-                                <span class="meter-text">JavaScript</span><br>
-                                <span class="emoji-meter" data-value="4"></span>
-                            </div>
-                            <div class="meters">
-                                <span class="meter-text">SQL</span><br>
-                                <span class="emoji-meter" data-value="4"></span>
-                            </div>
-                        </div>
-                    </div>
-                </section>
+        <div class="left-panel">
+            <div class="photo-container">
+                <img src="img/photo.jpg" alt="Photo de profil" class="profile-photo">
             </div>
-
-            <!-- deuxième div de contenu -->
-            <div id="content-right">
-                <section class="text-boxes">
-                    <h3>Description</h3>
-                    <p id="description">Actuellement en formation au département des Sciences et Technologies de l'HEH, je suis une personne dynamique et passionnée par l'informatique. J'aime relever de nouveaux défis et développer continuellement mes compétences. Attaché à l'esprit d'équipe, je veille au bien-être de mes collègues, convaincu qu'une équipe soudée est plus performante.</p>
-                </section>
-
-                <section class="text-boxes">
-                    <h3>Éducation</h3>
-                    <div class="container">
-                        <!-- Première carte -->
-                        <div class="card-container">
-                            <div class="carte">
-                                <div class="face">
-                                    <div class="text-content">
-                                        <span class="school">HEH</span>
-                                        <span class="date-education">2023-Maintenant</span><br>
-                                        <span class="location">Mons</span>
-                                        <span class="degree">Bachelier Informatique</span>
-                                        <p class="text-education">option sécurité</p>
-                                    </div>
-                                </div>
-                                <div class="dos">
-                                    <img src="img/heh.png" alt="Image HEH">
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Deuxième carte -->
-                        <div class="card-container">
-                            <div class="carte">
-                                <div class="face">
-                                    <div class="text-content">
-                                        <span class="school">IPES Léon Hurez</span>
-                                        <span class="date-education">2015-2022</span><br>
-                                        <span class="location">La Louvière</span>
-                                        <span class="degree">CESS</span>
-                                        <p class="text-education"></p>
-                                    </div>
-                                </div>
-                                <div class="dos">
-                                    <img src="img/ipes.png" alt="Image IPES Léon Hurez">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-
-                <section class="text-boxes">
-                    <h3>Expériences</h3>
-                    <div class="container">
-                        <div class="card-container">
-                            <div class="carte">
-                                <div class="face">
-                                    <div class="text-content">
-                                        <span class="company">PTB</span>
-                                        <span class="date-experience">2023-2024</span><br>
-                                        <span class="location">Bruxelles</span>
-                                        <span class="position">Stagiaire</span>
-                                        <p class="text-experience">Assistant de responsable réseau.</p>
-                                    </div>
-                                </div>
-                                <div class="dos">
-                                    <img src="img/ptb.png" alt="Logo PTB">
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Deuxième carte -->
-                        <div class="card-container">
-                            <div class="carte">
-                                <div class="face">
-                                    <div class="text-content">
-                                        <span class="company">Maison des Enfants Pirouette</span>
-                                        <span class="date-experience">2022-2023</span><br>
-                                        <span class="location">Bruxelles - Marolles</span>
-                                        <span class="position">Stagiaire animateur</span>
-                                    </div>
-                                </div>
-                                <div class="dos">
-                                    <img src="img/pirouette.jpg" alt="Logo Maison des Enfants Pirouette">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
+            
+            <div class="contact-info">
+                <h1>Bryam Rishing Silva</h1>
+                <p class="subtitle">Étudiant à l'HEH</p>
+                
+                <div class="contact-item">
+                    <img src="icons/location.svg" alt="Localisation">
+                    <span>Cité jardin 4/103 7100 la Louvière</span>
+                </div>
+                
+                <div class="contact-item">
+                    <img src="icons/vibration.svg" alt="Téléphone">
+                    <span>+32472544754</span>
+                </div>
+                
+                <div class="contact-item">
+                    <img src="icons/mail.svg" alt="Email">
+                    <span>rishingsilvabryam@gmail.com</span>
+                </div>
             </div>
-
-            <aside id="main-right">
-                <section class="knowedges">
-                    <h3>Certifications</h3>
-                    <div>
-                        <img id="certification" src="img/certificat_intro_to_networks_CCNA.webp" alt="CCNAv7">
+            
+            <div class="passions">
+                <h2>Passions</h2>
+                <p>Guitariste</p>
+                <p>Autodidacte, Créatif</p>
+                <p>Pilote FPV</p>
+            </div>
+            
+            <div class="skills">
+                <h2>Skills</h2>
+                
+                <div class="skill-item">
+                    <span class="skill-name">python</span>
+                    <div class="skill-meter">
+                        <span class="emoji-meter" data-value="3"></span>
                     </div>
-                </section>
-
-                <section class="knowedges">
-                    <h3>Langues</h3>
-                    <div class="skills-meters">
-                        <div class="meters-container">
-                            <div class="meters">
-                                <span class="meter-text">Espagnol</span><br>
-                                <span class="emoji-meter" data-value="5" data-emoji="🇪🇸"></span>
-                            </div>
-                            <div class="meters">
-                                <span class="meter-text">Français</span><br>
-                                <span class="emoji-meter" data-value="5" data-emoji="🇫🇷"></span>
-                            </div>
-                            <div class="meters">
-                                <span class="meter-text">Anglais</span><br>
-                                <span class="emoji-meter" data-value="3" data-emoji="🇬🇧"></span>
-                            </div>
-                        </div>
+                </div>
+                
+                <div class="skill-item">
+                    <span class="skill-name">HTML</span>
+                    <div class="skill-meter">
+                        <span class="emoji-meter" data-value="5"></span>
                     </div>
-                </section>
-
-                <section id="profiles">
-                    <h3>Profiles</h3>
-                    <div id="links">
-                        <div class="social-containers">
-                            <a href="https://github.com/Bryamx26" target="_blank">
-                                <img src="icons/github.svg" class="icones" alt="icone Github">
-                                Bryamx26
-                            </a>
-                        </div>
-                        <div class="social-containers">
-                            <a href="https://instagram.com/bryamx19" target="_blank">
-                                <img src="icons/instagram.svg" class="icones" alt="icone Instagram">
-                                Bryamx19
-                            </a>
-                        </div>
-                        <div class="social-containers">
-                            <a href="https://www.linkedin.com/in/bryam-rishing-silva-5a291b352/" target="_blank">
-                                <img src="icons/linkedin.svg" class="icones" alt="icone linkedin">
-                                Bryam Carlo Rishing Silva
-                            </a>
-                        </div>
+                </div>
+                
+                <div class="skill-item">
+                    <span class="skill-name">CSS</span>
+                    <div class="skill-meter">
+                        <span class="emoji-meter" data-value="3"></span>
                     </div>
-                </section>
-            </aside>
+                </div>
+                
+                <div class="skill-item">
+                    <span class="skill-name">PHP</span>
+                    <div class="skill-meter">
+                        <span class="emoji-meter" data-value="3"></span>
+                    </div>
+                </div>
+                
+                <div class="skill-item">
+                    <span class="skill-name">JavaScript</span>
+                    <div class="skill-meter">
+                        <span class="emoji-meter" data-value="3"></span>
+                    </div>
+                </div>
+                
+                <div class="skill-item">
+                    <span class="skill-name">SQL</span>
+                    <div class="skill-meter">
+                        <span class="emoji-meter" data-value="3"></span>
+                    </div>
+                </div>
+                
+                <p class="skill-caption">Apprentissage</p>
+            </div>
+            
+            <div class="languages">
+                <h2>Langues</h2>
+                
+                <div class="language-item">
+                    <span class="language-name">Espagnol</span>
+                    <div class="language-meter">
+                        <span class="emoji-meter" data-value="5"></span>
+                    </div>
+                </div>
+                
+                <div class="language-item">
+                    <span class="language-name">Français</span>
+                    <div class="language-meter">
+                        <span class="emoji-meter" data-value="5"></span>
+                    </div>
+                </div>
+                
+                <div class="language-item">
+                    <span class="language-name">Anglais</span>
+                    <div class="language-meter">
+                        <span class="emoji-meter" data-value="3"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="right-panel">
+            <div class="description">
+                <p>Actuellement en formation au département des Sciences et Technologies de l'HEH, je suis une personne dynamique, aimable et passionnée par l'informatique. J'aime relever de nouveaux défis et développer continuellement mes compétences.</p>
+            </div>
+            
+            <div class="section">
+                <h2>Profiles</h2>
+                <hr>
+                
+                <div class="profile-item">
+                    <img src="icons/github.svg" alt="GitHub">
+                    <span>bryamx26</span>
+                </div>
+                
+                <div class="profile-item">
+                    <img src="icons/instagram.svg" alt="Instagram">
+                    <span>bryamx19</span>
+                </div>
+                
+                <div class="profile-item">
+                    <img src="icons/linkedin.svg" alt="LinkedIn">
+                    <span>Bryam Carlo Rishing Silva</span>
+                </div>
+            </div>
+            
+            <div class="section">
+                <h2>Experience</h2>
+                <hr>
+                
+                <div class="experience-item">
+                    <div class="experience-header">
+                        <span class="experience-company">PTB</span>
+                        <span class="experience-location">Bruxelles</span>
+                    </div>
+                    <p class="experience-position">Stagiaire</p>
+                    <p class="experience-description">Assistant de responsable réseau.</p>
+                </div>
+                
+                <div class="experience-item">
+                    <div class="experience-header">
+                        <span class="experience-company">Maison des Enfants Pirouette</span>
+                        <span class="experience-location">Bruxelles-Marolles</span>
+                    </div>
+                    <p class="experience-position">Stagiaire animateur/accompagnateur</p>
+                    <p class="experience-description">Maison</p>
+                </div>
+                
+                <div class="experience-item">
+                    <div class="experience-header">
+                        <span class="experience-company">Bershka</span>
+                        <span class="experience-location">Bruxelles</span>
+                    </div>
+                    <p class="experience-position">Job étudiant</p>
+                </div>
+            </div>
+            
+            <div class="section">
+                <h2>Education</h2>
+                <hr>
+                
+                <div class="education-item">
+                    <div class="education-header">
+                        <span class="education-school">HEH <img src="icons/location-dot.svg" alt="Location"></span>
+                        <span class="education-date">2023-Maintenant</span>
+                    </div>
+                    <p class="education-location">Mons</p>
+                    <p class="education-degree">Bachelier Informatique</p>
+                    <p class="education-description">Orientation réseaux & télécommunications option sécurité.</p>
+                </div>
+                
+                <div class="education-item">
+                    <div class="education-header">
+                        <span class="education-school">IPES Léon Hurez</span>
+                        <span class="education-date">2015-2022</span>
+                    </div>
+                    <p class="education-location">La Louvière</p>
+                    <p class="education-degree">CESS</p>
+                </div>
+            </div>
+            
+            <div class="section">
+                <h2>Certifications</h2>
+                <hr>
+                
+                <p>CCNAv7</p>
+            </div>
         </div>
     </main>
 
-    <script>
-        document.querySelectorAll('.emoji-meter').forEach(meter => {
-            let value = parseInt(meter.getAttribute('data-value'));
-            let reste = 5-value;
-            meter.innerHTML = "<img class='etoiles' src = '/icons/etoile.svg'>".repeat(value);
-            
-            meter.innerHTML += "<img class ='etoiles' src = '/icons/etoile-n.svg'>".repeat(reste);
-        });
-    </script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script>
-        $(document).ready(function () {
-            $(".meters").hover(
-                function () {
-                    $(this).css({
-                        "transform": "scale(1.01)", 
-                        "border": " dotted 2px",
-                        
-                        "background": "#cfcfcfa6"
-                    });
-                },
-                function () {
-                    $(this).css({
-                        "transform": "scale(1)",
-                        "background": "transparent",
-                        "border": "solid 2px #302f2fe5"
-                    });
-                }
-            );
+        document.addEventListener('DOMContentLoaded', function() {
+            document.querySelectorAll('.emoji-meter').forEach(meter => {
+                let value = parseInt(meter.getAttribute('data-value'));
+                let reste = 5-value;
+                meter.innerHTML = "<img class='etoile' src='icons/etoile.svg'>".repeat(value);
+                meter.innerHTML += "<img class='etoile' src='icons/etoile-n.svg'>".repeat(reste);
+            });
         });
     </script>
 </body>
