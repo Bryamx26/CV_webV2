@@ -1,0 +1,7 @@
+Mon CV implémente un plugin de mode sombre .
+
+Les étoiles sont générées automatiquement à partir de la valeur de l’attribut data-value.
+De plus, une étoile effectue une rotation de 90 degrés lorsqu’elle est survolée.
+
+Lorsqu’on survole le cadre contenant la photo, celle-ci augmente de taille et déborde légèrement 
+(effet intentionnel, discutable mais assumé).
