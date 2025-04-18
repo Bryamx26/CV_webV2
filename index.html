@@ -200,22 +200,41 @@
             <div class="section">
                 <h2>Certifications</h2>
                 <hr>
-                
                 <p>CCNAv7</p>
+                <img id="certification" src="/img/certificat_intro_to_networks_CCNA.webp" alt="certification cisco initiation au réseaux." >
+                
             </div>
         </div>
     </main>
 
+
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            document.querySelectorAll('.emoji-meter').forEach(meter => {
-                let value = parseInt(meter.getAttribute('data-value'));
-                let reste = 5-value;
-                meter.innerHTML = "<img class='etoile' src='icons/etoile.svg'>".repeat(value);
-                meter.innerHTML += "<img class='etoile' src='icons/etoile-n.svg'>".repeat(reste);
-            });
-        });
+        
+        document.addEventListener('DOMContentLoaded', function () {
+    document.querySelectorAll('.emoji-meter').forEach(async meter => {
+        let value = parseInt(meter.getAttribute('data-value'));
+        let reste = 5 - value;
+
+        // Fonction pour attendre un temps
+        const sleep = ms => new Promise(resolve => setTimeout(resolve, ms));
+
+        meter.innerHTML = ""; // On vide d'abord le contenu
+
+        // Affichage des étoiles pleines une par une
+        for (let i = 0; i < value; i++) {
+            meter.innerHTML += "<img class='etoile' src='icons/etoile.svg'>";
+            await sleep(500); // attend 300ms
+        }
+
+        // Affichage des étoiles vides
+        for (let i = 0; i < reste; i++) {
+            meter.innerHTML += "<img class='etoile' src='icons/etoile-n.svg'>";
+            await sleep(500); // attend 300ms
+        }
+    });
+});
+
     </script>
 </body>
 </html>

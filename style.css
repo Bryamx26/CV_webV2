@@ -58,13 +58,13 @@ main {
 }
 
 .contact-info h1 {
-    font-size: 18px;
+    font-size: 1.5rem;
     margin-bottom: 5px;
     color: #2c3e50;
 }
 
 .subtitle {
-    font-size: 14px;
+    font-size: 1.2rem;
     font-weight: normal;
     margin-bottom: 15px;
 }
@@ -73,17 +73,17 @@ main {
     display: flex;
     align-items: center;
     margin-bottom: 8px;
-    font-size: 12px;
+    font-size: 1.1rem;
 }
 
 .contact-item img {
-    width: 16px;
-    height: 16px;
+    width: 20px;
+    height: 20px;
     margin-right: 8px;
 }
 
 h2 {
-    font-size: 16px;
+    font-size: 1.2rem;
     margin-bottom: 15px;
     color: var(--section-title-color);
     border-bottom: none;
@@ -95,7 +95,7 @@ h2 {
 }
 
 .passions p {
-    font-size: 14px;
+    font-size: 1rem;
     margin-bottom: 5px;
 }
 
@@ -109,7 +109,7 @@ h2 {
 
 .skill-name, .language-name {
     display: block;
-    font-size: 14px;
+    font-size: 1rem;
     margin-bottom: 3px;
 }
 
@@ -129,7 +129,7 @@ h2 {
 }
 
 .skill-caption {
-    font-size: 12px;
+    font-size: 1rem;
     margin-top: 5px;
     font-style: italic;
     text-align: right;
@@ -143,7 +143,7 @@ h2 {
 }
 
 .description {
-    font-size: 13px;
+    font-size:1.1rem;
     margin-bottom: 20px;
     color: #2c3e50;
 }
@@ -153,7 +153,7 @@ h2 {
 }
 
 .section h2 {
-    font-size: 16px;
+    font-size: 1.2rem;
     margin-bottom: 5px;
 }
 
@@ -177,7 +177,7 @@ hr {
 }
 
 .profile-item span {
-    font-size: 13px;
+    font-size: 1rem;
 }
 
 .experience-item, .education-item {
@@ -188,7 +188,7 @@ hr {
     display: flex;
     justify-content: space-between;
     font-weight: bold;
-    font-size: 14px;
+    font-size: 1rem;
 }
 
 .experience-company, .education-school {
@@ -204,19 +204,24 @@ hr {
 }
 
 .experience-location, .education-location, .education-date, .experience-date {
-    font-size: 13px;
+    font-size: 0.7rem;
 }
 
 .experience-position, .education-degree {
-    font-size: 13px;
+    font-size: 0.9rem;
     margin-top: 3px;
 }
 
 .experience-description, .education-description {
-    font-size: 12px;
+    font-size: 1rem;
     margin-top: 3px;
     font-style: italic;
 }
+
+#certification{
+    width: 50%;
+}
+
 
 /* Pour l'impression */
 @media print {
@@ -227,6 +232,7 @@ hr {
     }
     
     main {
+        margin: 0px;
         width: 100%;
         height: 100%;
         box-shadow: none;
@@ -239,6 +245,7 @@ hr {
         background-color: var(--left-panel-bg) !important;
         -webkit-print-color-adjust: exact;
         print-color-adjust: exact;
+        
     }
     
     .right-panel {
