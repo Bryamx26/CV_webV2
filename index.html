@@ -47,28 +47,28 @@
                 <h2>Skills</h2>
                 
                 <div class="skill-item">
-                    <span class="skill-name">python</span>
+                    <span class="skill-name">Python</span>
                     <div class="skill-meter">
                         <span class="emoji-meter" data-value="3"></span>
                     </div>
                 </div>
                 
                 <div class="skill-item">
-                    <span class="skill-name">HTML</span>
+                    <span class="skill-name">html</span>
                     <div class="skill-meter">
                         <span class="emoji-meter" data-value="5"></span>
                     </div>
                 </div>
                 
                 <div class="skill-item">
-                    <span class="skill-name">CSS</span>
+                    <span class="skill-name">css</span>
                     <div class="skill-meter">
                         <span class="emoji-meter" data-value="3"></span>
                     </div>
                 </div>
                 
                 <div class="skill-item">
-                    <span class="skill-name">PHP</span>
+                    <span class="skill-name">php</span>
                     <div class="skill-meter">
                         <span class="emoji-meter" data-value="3"></span>
                     </div>
@@ -82,7 +82,7 @@
                 </div>
                 
                 <div class="skill-item">
-                    <span class="skill-name">SQL</span>
+                    <span class="skill-name">sql</span>
                     <div class="skill-meter">
                         <span class="emoji-meter" data-value="3"></span>
                     </div>
@@ -127,18 +127,28 @@
                 <hr>
                 
                 <div class="profile-item">
-                    <img src="icons/github.svg" alt="GitHub">
-                    <span>bryamx26</span>
+
+                    <a href="https://github.com/Bryamx26" target="_blank">
+                        <img src="icons/github.svg" alt="GitHub">
+                        <span>bryamx26</span>
+                        
+                    </a>
+                </div>
+                
+                <div class="profile-item " >
+                    <a href="https://www.instagram.com/bryamx19/#" target="_blank">
+                        <img src="icons/instagram.svg" alt="Instagram">
+                        <span>bryamx19</span>
+                    </a>
+                    
+                    
                 </div>
                 
                 <div class="profile-item">
-                    <img src="icons/instagram.svg" alt="Instagram">
-                    <span>bryamx19</span>
-                </div>
-                
-                <div class="profile-item">
-                    <img src="icons/linkedin.svg" alt="LinkedIn">
-                    <span>Bryam Carlo Rishing Silva</span>
+                    <a href="https://www.linkedin.com/in/bryam-rishing-silva-5a291b352/" target="_blank">
+                        <img src="icons/linkedin.svg" alt="LinkedIn">
+                        <span>Bryam Carlo Rishing Silva</span>
+                    </a>
                 </div>
             </div>
             
@@ -239,5 +249,48 @@
 });
 
     </script>
+
+    <script defer>
+    // hover en js
+    $('.photo-container').on("mouseenter", function () {
+    console.log("hello");
+    $(".profile-photo").css({
+        "transform": "scale(1.125)",
+
+    });
+   
+
+});
+
+$('.photo-container').on("mouseleave", function () {
+console.log("hey");
+    $(".profile-photo").css({
+        "transform": "scale(1)"
+    
+    });
+    });
+
+
+    //images tranformation verticale
+    $(document).on("mouseenter", ".etoile", function () {
+    console.log("hover étoile");
+    $(this).css({
+        
+        "transform": "rotate(90deg)",
+        "transition": "transform 0.3s ease"
+    });
+});
+
+$(document).on("mouseleave", ".etoile", function () {
+    console.log("leave étoile");
+    $(this).css({
+        
+        "transform": "rotate(0deg)",
+        "transition": "transform 0.3s ease"
+    });
+});
+
+    </script>
+    
 </body>
 </html>
