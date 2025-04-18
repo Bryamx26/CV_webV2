@@ -233,11 +233,11 @@ hr {
 }
 
 .experience-location, .education-location, .education-date, .experience-date {
-    font-size: 0.7rem;
+    font-size: 1rem;
 }
 
 .experience-position, .education-degree {
-    font-size: 0.9rem;
+    font-size: 1.2rem;
     margin-top: 3px;
 }
 
