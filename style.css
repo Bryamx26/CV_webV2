@@ -73,7 +73,7 @@ main {
     display: flex;
     align-items: center;
     margin-bottom: 8px;
-    font-size: 1.1rem;
+    font-size: 1rem;
 }
 
 .contact-item img {
@@ -258,4 +258,11 @@ hr {
     h2, .section, .experience-item, .education-item {
         page-break-inside: avoid;
     }
+
+
+
+    @media screen  {
+        
+    }
 }
+
