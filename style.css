@@ -5,7 +5,7 @@
     --section-title-color: #000;
     --left-panel-bg: #dfe6e9;
     --right-panel-bg: #fff;
-    --accent-color: #3498db;
+    --accent-color: #fdfdfd;
     --separator-color: #ddd;
 }
 
@@ -61,6 +61,8 @@ main {
 
 .contact-info {
     margin-bottom: 20px;
+    padding: 5px;
+   
 }
 
 .contact-info h1 {
@@ -80,6 +82,7 @@ main {
     align-items: center;
     margin-bottom: 8px;
     font-size: 1rem;
+    
 }
 
 .contact-item img {
@@ -98,6 +101,9 @@ h2 {
 
 .passions {
     margin-bottom: 20px;
+    padding: 5px;
+    background-color: var(--accent-color);
+    border-radius: 15px;
 }
 
 .passions p {
@@ -111,7 +117,8 @@ h2 {
 
 .skill-item, .language-item {
     margin-bottom: 8px;
-
+    padding: 5px;
+   
 }
 
 
@@ -126,6 +133,7 @@ h2 {
 .skill-meter, .language-meter {
     display: flex;
     align-items: center;
+    
 }
 
 .emoji-meter {
@@ -155,7 +163,10 @@ h2 {
 .description {
     font-size:1.1rem;
     margin-bottom: 20px;
+    padding: 15px;
     color: #2c3e50;
+    background-color: var(--separator-color);
+    border-radius: 15px;
 }
 
 .section {
